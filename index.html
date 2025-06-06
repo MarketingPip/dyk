@@ -125,7 +125,7 @@
         // Load stories from JSON file
         async function loadStories() {
             try {
-                const response = await fetch('./all-stories.json');
+                const response = await fetch('./all_stories.json');
                 if (!response.ok) throw new Error('Failed to fetch stories');
                 
                 stories = await response.json();
